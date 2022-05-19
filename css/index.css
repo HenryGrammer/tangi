@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,400&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --default-font: "Roboto", sans-serif;
+  --regular: 400;
+  --black: 900;
+}
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #ffb6b6, #c4c4c4);
+  overflow: hidden;
+
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .text-container {
+  width: 600px;
+  margin-top: -100px;
+}
+.main .text-container h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: var(--default-font);
+  font-weight: var(--black);
+}
+.main .text-container p {
+  font-size: 30px;
+  font-family: var(--default-font);
+  font-weight: var(--regular);
+  text-align: justify;
+  text-indent: 50px;
+}
+.main .image-container {
+  margin-right: -50px;
+}
+.main .image-container img {
+  width: 639px;
+  height: 569px;
+}
+
+/* Responsive */
+
+/* laptop */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .main {
+    overflow: hidden;
+  }
+  .main .text-container {
+    margin-left: 20px;
+  }
+  .main .text-container h1 {
+    font-size: 40px;
+  }
+  .main .text-container p {
+    font-size: 25px;
+  }
+  .main .image-container img {
+    width: 450px;
+    height: 450px;
+    margin-right: 60px;
+  }
+}

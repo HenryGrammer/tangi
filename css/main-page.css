@@ -34,8 +34,8 @@ body {
   gap: 15px;
 }
 .main .image-container img {
-  width: 512px;
-  height: 608px;
+  width: 400px;
+  height: 500px;
 
   cursor: pointer;
 }
